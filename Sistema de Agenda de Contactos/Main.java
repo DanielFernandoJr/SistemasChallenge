@@ -62,7 +62,7 @@ class Agenda{
         }
     }
     int buscarNome(String nome){
-        if(!nome.isBlank()){
+        if(!nome.isEmpty()){
             for(int i=0; i<contactos.size(); i++){
                 if(nome.equalsIgnoreCase(contactos.get(i).nome)){
                     return i;
